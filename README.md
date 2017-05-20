@@ -1,1 +1,2 @@
 # StylistCompanion
+final project
