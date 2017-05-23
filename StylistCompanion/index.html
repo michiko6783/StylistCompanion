@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stylist Companion</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+</head>
+<body>
+<div class="container">
+  <div class="imageContainer" >
+    <video id="video" width="250" height="250" <!-- autoplay -->></video>
+    <canvas id="canvas" width="600" height="500"  ></canvas>
+    <button id="snap">Snap Photo</button>
+    <button class="chemical" type="button">Chemical Release Form</button>
+    <button class="history" type="button">Service History</button>
+
+
+  </div>
+    <form class="clientCard" action="index_submit" method="get" accept-charset="utf-8">
+     <input type="text" name="name" placeholder="NAME" ><br> <input type="date" name="date"> <br><input type="text" name="phone" placeholder="000-000-0000" > <br> <input type="text" name="stylist" placeholder="STYLIST" >
+<!--       <button class="chemical" type="button">Chemical Release Form</button>
+      <button class="history" type="button">Service History</button>
+ -->    </form>
+
+      <div class="manikinStyle">
+      <p class="style">Styles</p>
+<!--         <img class="manikinImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" alt="">
+ -->        <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+        <img class="manikinImg" src="images/10.jpg" draggable="true" ondragstart="drag(event)" width="150" height="150">
+
+        <img class="manikinImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" alt="">
+        <img class="manikinImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" alt="">
+        <img class="manikinImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" alt="">
+        <img class="manikinImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" alt="">
+        <img class="manikinImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" alt="">
+        <img class="manikinImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" alt="">
+      </div>
+
+      <div class="manikinFringe">
+      <p class="fringe">Fringe</p>
+        <img class="fringeImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" alt="">
+        <img class="fringeImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" alt="">
+        <img class="fringeImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" alt="">
+        <img class="fringeImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" alt="">
+      </div>
+  </div>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+<script src="project.js" type="text/javascript" charset="utf-8" ></script>
+</body>
+</html>
