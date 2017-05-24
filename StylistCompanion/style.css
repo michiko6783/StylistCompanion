@@ -40,9 +40,19 @@ button{
   display: inline-grid;
 }
 
+p {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+}
+.styles {
+  padding-top: 10px;
+}
+
 #video {
-  visibility: hidden;
-  z-index: ;
+/*  visibility: hidden;
+*/  z-index: ;
   position: absolute;
 }
 
@@ -74,20 +84,22 @@ align-self: center;
 .manikinStyle{
 grid-area: style;
 z-index: +2;
-background-color: red;
+background-color: #a19b9b;
 margin-right: -50px;
 }
 
 .manikinImg, .fringeImg {
   padding: 20px;
+
 }
 
 .manikinFringe{
 grid-area: fringe;
-background-color: blue;
+background-color: #a19b9b;
 margin-right: -50px;
 /*height: 300px;
 */}
+
 draggable {
   -moz-user-select: none;
   -khtml-user-select: none;

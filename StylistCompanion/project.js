@@ -127,7 +127,8 @@ function handleDrop(e) {
 //end drag/drop
 
 function myFunction() {
-    document.getElementById("frm1").submit();
+    var x = document.getElementById("frm1").method;
+    document.getElementById("demo").innerHTML = x;
 }
 
 

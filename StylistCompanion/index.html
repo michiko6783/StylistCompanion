@@ -4,17 +4,17 @@
   <title>Stylist Companion</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="welcome.php">
-
+  <link rel="stylesheet" type="text/css" href="chemical.html">
 
 </head>
 <body>
 <div class="container">
   <div class="imageContainer" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <video id="video" width="250" height="250" <!-- autoplay -->></video>
+    <video id="video" width="150" height="150" <!-- autoplay -->></video>
     <canvas id="canvas" width="600" height="500" class="column" id="columns"></canvas>
     <button id="snap">Snap Photo</button>
-    <button class="chemical" type="button">Chemical Release Form</button>
-    <button class="history" type="button">Service History</button>
+    <button class="chemical" type="button" onclick="myFunction()" value="Submit">Chemical Release Form</button>
+    <button class="history" type="button" onclick="myFunction()" value="Submit">Service History</button>
 
 
   </div>
@@ -33,21 +33,27 @@
       <div class="manikinStyle" id="columns">
       <p class="style">Styles</p>
 
-        <img class="manikinImg" src="images/10.jpg" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
-        <img class="manikinImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
-        <img class="manikinImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
-        <img class="manikinImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
-        <img class="manikinImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
-        <img class="manikinImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
-        <img class="manikinImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="manikinImg" src="images/10.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="manikinImg" src="images/105.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="manikinImg" src="images/20.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="manikinImg" src="images/15.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="manikinImg" src="images/55.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="manikinImg" src="images/75.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="manikinImg" src="images/150.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="manikinImg" src="images/40.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="manikinImg" src="images/50.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="manikinImg" src="images/85.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="manikinImg" src="images/charlie.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="manikinImg" src="images/sam.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+
       </div>
 
       <div class="manikinFringe" id="columns">
       <p class="fringe">Fringe</p>
-        <img class="fringeImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
-        <img class="fringeImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
-        <img class="fringeImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
-        <img class="fringeImg" src="images/Case-Profile-PrimaryImage-Placeholder-14.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="fringeImg" src="images/25f.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="fringeImg" src="images/30f.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="fringeImg" src="images/60.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
+        <img class="fringeImg" src="images/45.png" class="column" draggable="true" width="150" height="150" ondragstart="drag(event)">
       </div>
   </div>
 
