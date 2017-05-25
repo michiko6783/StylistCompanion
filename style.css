@@ -17,15 +17,11 @@ grid-template-columns: 40% 55%;
 grid-area: image;
 }
 
-/*.clientImg {
-  height: 100%;
-  width: 100%;
-}*/
-
 .clientCard{
-height: 77%;
+height: 100%;
 width: 95%;
 grid-area: card;
+margin-top: -50px;
 }
 
 input {
@@ -41,10 +37,12 @@ button{
 }
 
 p {
-  margin: 0;
+  margin: 15px;
   padding: 10px;
   text-align: center;
   font-size: 35px;
+  border: 2px solid DarkSlateGray;
+  background-color: LightYellow;
 }
 .styles {
   padding-top: 10px;
@@ -81,21 +79,34 @@ align-self: center;
 */margin-left: 45px;
 }
 
+/*.manikin{
+grid-area: style;
+z-index: -1;
+position: absolute;
+padding: 20px;
+}*/
 .manikinStyle{
 grid-area: style;
 z-index: +2;
-background-color: #a19b9b;
+background-color: Linen;
 margin-right: -50px;
 }
 
+.manikinImg:hover {
+  background-color: DarkSalmon;
+}
+.fringeImg:hover {
+  background-color: DarkSalmon;
+}
 .manikinImg, .fringeImg {
-  padding: 20px;
-
+  padding: 15px;
+  border: 2px  solid DarkGray;
+  margin-left: 15px;
 }
 
 .manikinFringe{
 grid-area: fringe;
-background-color: #a19b9b;
+background-color: Linen;
 margin-right: -50px;
 /*height: 300px;
 */}
